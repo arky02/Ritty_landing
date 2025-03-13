@@ -8,6 +8,7 @@ import {
   QueryClient,
   QueryClientProvider,
 } from "@tanstack/react-query";
+import Header from "@/components/Header";
 
 export default function App({ Component, pageProps }: AppProps) {
   const [queryClient] = useState(
@@ -35,6 +36,7 @@ export default function App({ Component, pageProps }: AppProps) {
             },
           }}
         />
+
         <Component {...pageProps} />
       </HydrationBoundary>
     </QueryClientProvider>

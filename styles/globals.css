@@ -2,17 +2,20 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #ffffff;
 }
 
-@theme inline {
+@theme {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --font-sans: Pretendard;
+  --breakpoint-3xl: 1920px;
+  --color-main: #6b65ff;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #ffffff;
     --foreground: #ededed;
   }
 }
@@ -21,13 +24,8 @@ body {
   background: var(--background);
   color: var(--foreground);
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
   font-size: 16px;
   font-weight: 400;
   color: #0a0a0a;
-}
-
-@theme {
-  --font-sans: Pretendard;
-  --breakpoint-3xl: 1920px;
 }
