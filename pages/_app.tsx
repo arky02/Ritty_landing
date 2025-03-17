@@ -1,5 +1,6 @@
 import "@/styles/globals.css";
 import "@/styles/fonts/pretendard.css";
+import "@/styles/fonts/jalnan.css";
 import type { AppProps } from "next/app";
 import { useState } from "react";
 import { Toaster } from "react-hot-toast";

@@ -25,13 +25,13 @@ const ChatSection = () => {
   const [isChatValid, setIsChatValid] = useState(false);
 
   return (
-    <div className="w-full h-full flex flex-col gap-[12px]">
+    <div
+      className="w-full h-full flex flex-col gap-[12px]"
+      style={{ height: "calc(100vh - 380px)" }}
+    >
       {/* 채팅 영역 */}
       <section className="h-full w-full">
-        <div
-          className="h-full max-h-[420px] w-full overflow-y-scroll p-[18px]"
-          // style={{ height: "calc(100% - 50px)" }}
-        >
+        <div className="h-full w-full overflow-y-scroll px-[18px]">
           {msgList.length > 0 &&
             msgList.map((msgEl, idx) =>
               ChatBubble({
@@ -43,7 +43,7 @@ const ChatSection = () => {
       </section>
 
       {/* 채팅 입력창 */}
-      <section className="md:flex justify-between items-center w-full md:w-[400px] h-[50px]">
+      <section className="md:flex justify-between items-center w-full h-[50px]">
         <input
           className="w-full h-[50px] resize-none rounded-[18px] px-[16px] bg-[#2c2d381e] my-[5px] text-[14px] md:text-[16px] flex items-center text-white placeholder-white "
           placeholder={"안녕, 리티!"}
