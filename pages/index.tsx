@@ -43,7 +43,7 @@ export default function Landing() {
             반려 고양이, <span className="text-main">리티</span>
           </h2>
           {/* HERO CARD SECTION */}
-          <section className="flex flex-col items-center rounded-[32px] border-[2px] border-[#DFDEFF] bg-[#ffffff7a] pt-[33px] px-[13px]">
+          <section className="max-w-[620px] flex flex-col items-center rounded-[32px] border-[2px] border-[#DFDEFF] bg-[#ffffff7a] pt-[33px] px-[8px]">
             <div className="px-[11.5px] py-[5px] text-[14px] font-bold bg-[#FFCF4B] rounded-full text-white w-fit">
               KEY POINT 1
             </div>
@@ -59,7 +59,11 @@ export default function Landing() {
               <br />
               리티와 대화하고 상호작용해요!
             </p>
-            <Image src={HeroImg1} alt="ritty introduction hero1"></Image>
+            <Image
+              src={HeroImg1}
+              alt="ritty introduction hero1"
+              width={400}
+            ></Image>
           </section>
         </div>
       </section>
@@ -67,9 +71,9 @@ export default function Landing() {
       // className="overflow-hidden"
       // style={{ height: "calc(100vh - 63px)" }}
       >
-        <div className="flex flex-col items-center w-full h-[calc(100%-40px)] bg-white pt-[33px] px-[16.5px]">
+        <div className="flex flex-col items-center w-full  h-[calc(100%-40px)] bg-white pt-[33px] px-[16.5px]">
           {/* HERO CARD SECTION */}
-          <section className="flex flex-col items-center rounded-[32px] border-[2px] border-[#DFDEFF] bg-[#ffffff7a] pt-[33px] px-[8px]">
+          <section className="max-w-[620px] flex flex-col items-center rounded-[32px] border-[2px] border-[#DFDEFF] bg-[#ffffff7a] pt-[33px] px-[8px]">
             <div className="px-[11.5px] py-[5px] text-[14px] font-bold bg-[#FFCF4B] rounded-full text-white w-fit">
               KEY POINT 2
             </div>
@@ -85,7 +89,11 @@ export default function Landing() {
               <br />
               리티가 고양이별로 돌아가버릴거예요.
             </p>
-            <Image src={HeroImg2} alt="ritty introduction hero2"></Image>
+            <Image
+              src={HeroImg2}
+              alt="ritty introduction hero2"
+              width={400}
+            ></Image>
           </section>
         </div>
       </section>
@@ -95,7 +103,7 @@ export default function Landing() {
       >
         <div className="flex flex-col items-center w-full h-[calc(100%-40px)] bg-white pt-[33px] px-[16.5px]">
           {/* HERO CARD SECTION */}
-          <section className="flex flex-col items-center rounded-[32px] border-[2px] border-[#DFDEFF] bg-[#ffffff7a] pt-[33px] px-[8px]">
+          <section className="max-w-[620px] flex flex-col items-center rounded-[32px] border-[2px] border-[#DFDEFF] bg-[#ffffff7a] pt-[33px] px-[8px]">
             <div className="px-[11.5px] py-[5px] text-[14px] font-bold bg-[#FFCF4B] rounded-full text-white w-fit">
               KEY POINT 3
             </div>
@@ -108,7 +116,11 @@ export default function Landing() {
               <br />
               나를 기다리고 기억해요.
             </p>
-            <Image src={HeroImg3} alt="ritty introduction hero3"></Image>
+            <Image
+              src={HeroImg3}
+              alt="ritty introduction hero3"
+              width={400}
+            ></Image>
           </section>
         </div>
       </section>
