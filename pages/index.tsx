@@ -44,7 +44,7 @@ export default function Landing() {
         style={{ width: `calc(100% - ${메인_양옆_여백 * 2}px)` }}
       />
       <footer className={`px-[${메인_양옆_여백}px] pt-[30px] pb-[90px]`}>
-        <Image src={SamMeowsLogo} />
+        <Image src={SamMeowsLogo} alt="sammeows logo" />
         <p className="text-[#757575] mt-[20px] mb-[16px] text-[14px]">
           <span className="text-[#2E3238] font-semibold mb-[14px]">
             주식회사 삼냥이즈
@@ -57,8 +57,18 @@ export default function Landing() {
           ritty.me
         </p>
         <div className="flex gap-[10px]">
-          <Image src={DiscordBtnIcon} width={32} height={32}></Image>
-          <Image src={InstagramBtnIcon} width={32} height={32}></Image>
+          <Image
+            src={DiscordBtnIcon}
+            width={32}
+            height={32}
+            alt="sammeows discord button"
+          ></Image>
+          <Image
+            src={InstagramBtnIcon}
+            width={32}
+            height={32}
+            alt="sammeows instagram button"
+          ></Image>
         </div>
       </footer>
     </main>
