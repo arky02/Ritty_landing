@@ -14,7 +14,7 @@ export default function Landing() {
       <Header />
       <section
         className="w-full mt-[59px] overflow-hidden"
-        style={{ height: "calc(100dvh - 59px)" }}
+        style={{ height: "calc(100svh - 59px)" }}
       >
         <div className="relative w-full h-full">
           <Image

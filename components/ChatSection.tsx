@@ -27,7 +27,7 @@ const ChatSection = () => {
   return (
     <div
       className="w-full h-full flex flex-col gap-[12px]"
-      style={{ height: "calc(100vh - 380px)" }}
+      style={{ height: "calc(100svh - 380px)" }}
     >
       {/* 채팅 영역 */}
       <section className="h-full w-full">
