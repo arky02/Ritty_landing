@@ -40,10 +40,17 @@ export default function Landing() {
         </div>
       </div>
       <div
-        className={`h-[1px] bg-[#e7e9ef] mx-[${메인_양옆_여백}px]`}
-        style={{ width: `calc(100% - ${메인_양옆_여백 * 2}px)` }}
+        className="h-[1px] bg-[#e7e9ef]"
+        style={{
+          width: `calc(100% - ${메인_양옆_여백 * 2}px)`,
+          margin: `0 ${메인_양옆_여백}px`,
+        }}
       />
-      <footer className={`px-[${메인_양옆_여백}px] pt-[30px] pb-[90px]`}>
+      <footer
+        style={{
+          padding: `30px ${메인_양옆_여백}px 90px`,
+        }}
+      >
         <Image src={SamMeowsLogo} alt="sammeows logo" />
         <p className="text-[#757575] mt-[20px] mb-[16px] text-[14px]">
           <span className="text-[#2E3238] font-semibold mb-[14px]">

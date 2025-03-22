@@ -7,7 +7,10 @@ import HeroImg3 from "@/public/images/heroImg3.png";
 const HeroSection = () => {
   return (
     <section
-      className={`w-full h-full flex flex-col items-center gap-[55px] px-[${메인_양옆_여백}px]`}
+      className="w-full h-full flex flex-col items-center gap-[55px]"
+      style={{
+        padding: `0 ${메인_양옆_여백}px`,
+      }}
     >
       <div
         className={`flex flex-col items-center w-full h-[calc(100%-40px)] bg-transparent`}

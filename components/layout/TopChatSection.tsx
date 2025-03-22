@@ -15,8 +15,11 @@ const TopChatSection = () => {
         alt="gradient background"
       />
       <section
-        className={`w-full mt-[59px] overflow-hidden relative px-[${메인_양옆_여백}px]`}
-        style={{ height: "calc(100svh - 59px)" }}
+        className="w-full mt-[59px] overflow-hidden relative"
+        style={{
+          height: "calc(100svh - 59px)",
+          padding: `0 ${메인_양옆_여백}px`,
+        }}
       >
         <div className="relative w-full h-full">
           <div className="top-0 left-0 w-full h-full flex flex-col items-center py-[30px] ">
