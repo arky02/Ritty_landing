@@ -46,7 +46,7 @@ const HeroCardSection = ({
 }) => {
   return (
     <section
-      className={`md:max-w-[1000px] w-full md:h-[620px] h-[605px] flex flex-col md:flex-row justify-between items-center md:items-end rounded-[32px] border-[2px] border-[#DFDEFF] bg-[#ffffffB2] pt-[35px] md:p-0`}
+      className={`md:max-w-[1000px] w-full h-[605px] md:h-[610px] flex flex-col md:flex-row justify-between items-center md:items-end rounded-[32px] border-[2px] border-[#DFDEFF] bg-[#ffffffB2] pt-[35px] md:p-0`}
       id={cardData.NO % 2 === 0 ? "hero_section_even" : "hero_section_odd"}
     >
       <div className="flex flex-col items-center md:items-start h-fit justify-end w-fit md:m-[55px]">
@@ -86,7 +86,7 @@ const HeroSection = () => {
         />
       </div>
       <section
-        className="w-full h-full flex flex-col items-center gap-[55px]"
+        className="w-full h-full flex flex-col items-center gap-[55px] md:gap-[50px]"
         style={{
           padding: `0 ${메인_양옆_여백}px`,
         }}
@@ -94,7 +94,7 @@ const HeroSection = () => {
         <div
           className={`flex flex-col items-center w-full h-[calc(100%-40px)] bg-transparent`}
         >
-          <h2 className="text-[30px] md:text-[45px] mt-[77px] mb-[70px] font-[Jalnan] w-fit text-center">
+          <h2 className="text-[30px] md:text-[45px] mt-[77px] md:mt-[60px] mb-[70px] md:mb-[50px] font-[Jalnan] w-fit text-center">
             내 손 안의 <br className="md:hidden" />
             반려 고양이, <span className="text-main">리티</span>
           </h2>
