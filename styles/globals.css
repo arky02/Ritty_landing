@@ -29,3 +29,17 @@ body {
   font-weight: 400;
   color: #0a0a0a;
 }
+
+#hero_section_even {
+}
+@media only screen and (min-width: 768px) {
+  #hero_section_even {
+    & > div {
+      align-items: flex-end;
+      & > p {
+        text-align: end;
+      }
+    }
+    flex-direction: row-reverse;
+  }
+}
