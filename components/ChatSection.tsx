@@ -1,5 +1,7 @@
 import { useState } from "react";
+import Image from "next/image";
 import ChatBubble from "./ChatBubble";
+import SendBtnIcon from "@/public/icons/send-btn.svg";
 
 const msgList = [
   { id: "user", content: "안녕하세요" },
@@ -43,9 +45,9 @@ const ChatSection = () => {
       </section>
 
       {/* 채팅 입력창 */}
-      <section className="md:flex justify-between items-center w-full h-[50px]">
+      <section className="md:flex relative justify-between items-center w-full h-[50px]">
         <input
-          className="w-full h-[50px] resize-none rounded-[18px] px-[16px] bg-[#2c2d381e] my-[5px] text-[16px] md:text-[16px] flex items-center text-white placeholder-white "
+          className="w-full h-[50px] resize-none rounded-[18px] px-[16px] bg-[#2c2d381e] my-[5px] text-[16px] md:text-[16px] flex items-center text-black placeholder-white "
           placeholder={"안녕, 리티!"}
           value={text}
           // text={text}
@@ -57,10 +59,11 @@ const ChatSection = () => {
 
         <button
           id="send"
-          className="absolute right-[24px] md:top-[22px] top-[20px] bg-transparent cursor-pointer border-[none]"
+          className="absolute top-[13px] right-[9px] cursor-pointer border-[none]"
           // onClick={sendMyText}
           disabled={!isChatValid}
         >
+          <Image src={SendBtnIcon} width={34} height={34} alt="send" />
           {/* <img src={Send} width="34" height="34" /> */}
         </button>
       </section>
