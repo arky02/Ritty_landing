@@ -1,12 +1,14 @@
 import Header from "@/components/Header";
-import GradientBg from "@/public/icons/bg-gradient.svg";
+import GradientBg from "@/public/images/bg-gradient.svg";
 import Image from "next/image";
 import Ritty3DTemp from "@/public/icons/ritty-temp.svg";
 import LanguageSelector from "@/components/LanguageSelector";
 import ChatSection from "@/components/ChatSection";
-import HeroImg1 from "@/public/images/heroImg1.svg";
-import HeroImg2 from "@/public/images/heroImg2.svg";
-import HeroImg3 from "@/public/images/heroImg3.svg";
+import HeroImg1 from "@/public/images/heroImg1.png";
+import HeroImg2 from "@/public/images/heroImg2.png";
+import HeroImg3 from "@/public/images/heroImg3.png";
+
+const 전체_양옆_여백 = "20px";
 
 export default function Landing() {
   return (
@@ -32,7 +34,9 @@ export default function Landing() {
           </div>
         </div>
       </section>
-      <div className="flex flex-col items-center w-full h-[calc(100%-40px)] bg-white pt-[33px] px-[16.5px]">
+      <div
+        className={`flex flex-col items-center w-full h-[calc(100%-40px)] bg-white pt-[33px] px-[${전체_양옆_여백}]`}
+      >
         <h2 className="text-[30px] my-[35px] font-[Jalnan] w-fit text-center">
           내 손 안의
           <br />
