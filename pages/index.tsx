@@ -40,7 +40,7 @@ export default function Landing() {
           </div>
         </div>
       </section>
-      <div className="relative w-[100vw] h-[1px]">
+      <div className="relative w-full h-[1px]">
         <Image
           src={HeroGradientBg}
           className="absolute -z-1 w-full bg-cover object-cover left-0"
