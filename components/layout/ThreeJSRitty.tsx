@@ -8,10 +8,9 @@ import { useState } from 'react';
 
 const ThreeJSRitty = () => {
 
-  
-  
+
   const cameraStates = {
-    position: [0, 65, 20] as Vector3Tuple, // 정확히 위에서 내려다보기
+    position: [0, 70, 20] as Vector3Tuple, // 정확히 위에서 내려다보기
     target: [0, 10, 0] as Vector3Tuple,  // 카메라 시선
   }
 
