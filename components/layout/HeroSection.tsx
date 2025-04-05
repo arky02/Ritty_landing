@@ -72,7 +72,7 @@ const HeroSection = () => {
 	return (
 		<>
 			{/* Background Gradient */}
-			<div className="relative w-full h-[1px]">
+			{/* <div className="relative w-full h-[1px]">
 				<Image
 					src={HeroGradientBg}
 					className="md:hidden absolute -z-1 w-full bg-cover object-cover left-0"
@@ -83,11 +83,12 @@ const HeroSection = () => {
 					className="hidden md:block absolute -z-1 w-full bg-cover object-cover left-0"
 					alt="gradient background"
 				/>
-			</div>
+			</div> */}
 			<section
 				className="w-full h-full flex flex-col items-center gap-[55px] md:gap-[50px]"
 				style={{
 					padding: `0 ${메인_양옆_여백}px`,
+
 				}}>
 				<div
 					className={`flex flex-col items-center w-full h-[calc(100%-40px)] bg-transparent`}>
@@ -146,7 +147,7 @@ const HeroSection = () => {
 					</HeroCardSection>
 				</div>
 			</section>
-			<div className="flex flex-col w-full items-center gap-[32px] mt-[70px] mb-[100px]">
+			<div id="download-ritty" className="flex flex-col w-full items-center gap-[32px] mt-[70px] mb-[100px]">
 				<h2 className="text-[28px] md:text-[44px] leading-[1.6] font-extrabold tracking-[3%] text-center">
 					세상에 단 하나뿐인
 					<br />

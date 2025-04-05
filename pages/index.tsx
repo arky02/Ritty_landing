@@ -1,6 +1,6 @@
 import Header from "@/components/Header";
 import HeroSection from "@/components/layout/HeroSection";
-import TopChatSection from "@/components/layout/TopChatSection";
+import TopChatSection from "@/components/layout/ChatSection";
 import FooterSection from "@/components/layout/FooterSection";
 import cookie from "js-cookie";
 import { useEffect } from "react";
@@ -21,8 +21,10 @@ export default function Landing() {
 		<main className={`w-full h-full flex flex-col items-center`}>
 			<Header />
 			<TopChatSection />
+			<div className="flex flex-col items-center w-full h-full md:bg-[url('/images/bg-hero-gradient_PC.svg')] bg-[url('/images/bg-hero-gradient_PC.svg')] bg-cover bg-center">
 			<HeroSection />
 			<FooterSection />
+			</div>
 		</main>
 	);
 }

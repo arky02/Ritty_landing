@@ -10,7 +10,14 @@ const Header = () => {
         alt="ritty-text-logo"
         className="-mt-1"
       ></Image>
-      <button className="bg-gradient-to-r from-[#4F89FF] to-[#8766FF] px-[10px] py-[8px] rounded-[10px] font-bold text-[12px]">
+      <button className="bg-gradient-to-r from-[#4F89FF] to-[#8766FF] px-[10px] py-[8px] rounded-[10px] font-bold text-[12px]"
+      onClick={() => {
+        const downloadSection = document.getElementById('download-ritty');
+        if (downloadSection) {
+          downloadSection.scrollIntoView({ behavior: 'smooth' });
+        }
+      }}
+      >
         리티 입양하기
       </button>
     </header>
