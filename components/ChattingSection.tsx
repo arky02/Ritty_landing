@@ -222,7 +222,7 @@ const ChattingSection = () => {
 						resetSendTimer();
 					}}
 					onKeyUp={(e) => {
-						if (e.key === "Enter" && text.trim()) {
+						if (e.key === "Enter" && text.trim() && isChatValid) {
 							e.preventDefault();
 							updateUserMsgList();
 						}
