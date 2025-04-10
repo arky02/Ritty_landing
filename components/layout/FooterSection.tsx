@@ -4,8 +4,6 @@ import DiscordBtnIcon from "@/public/icons/discord-btn.svg";
 import InstagramBtnIcon from "@/public/icons/instagram-btn.svg";
 import { 메인_양옆_여백 } from "@/pages";
 
-const APPSTORE_LINK = "https://apps.apple.com/kr/app/%EB%A6%AC%ED%8B%B0-ritty/id6743311040";
-
 const FooterSection = () => {
 	return (
 		<div
@@ -34,10 +32,10 @@ const FooterSection = () => {
 							src={DiscordBtnIcon}
 							width={32}
 							height={32}
-							alt="sammeows discord button"></Image>
+							alt="sammeows discord button"
+							/>
 						<Image
 							src={InstagramBtnIcon}
-							onClick={()=> window.open(APPSTORE_LINK, '_blank')}
 							width={32}
 							height={32}
 							alt="sammeows instagram button"></Image>

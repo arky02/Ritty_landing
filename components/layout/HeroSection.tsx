@@ -11,6 +11,8 @@ import { BreakLinedTextSpan } from "../BreakLinedTextSpan";
 import HeroGradientBg from "@/public/images/bg-hero-gradient.svg";
 import HeroGradientBgPC from "@/public/images/bg-hero-gradient_PC.svg";
 
+const APPSTORE_LINK = "https://apps.apple.com/kr/app/%EB%A6%AC%ED%8B%B0-ritty/id6743311040";
+
 const CARD_TEXT = {
 	CARD_1: {
 		NO: 1,
@@ -159,13 +161,19 @@ const HeroSection = () => {
 					<Image
 						src={DownloadAppStoreIcon}
 						width={122}
-						className="md:w-[160px] w-[122px]"
-						alt="download on the app store"></Image>
+						className="md:w-[160px] w-[122px] cursor-pointer"
+						alt="download on the app store"
+						onClick={()=> {
+							window.open(APPSTORE_LINK, '_blank')
+						}} />
 					<Image
 						src={DownloadPlayStoreIcon}
 						width={122}
-						className="md:w-[160px] w-[122px]"
-						alt="get it on google play"></Image>
+						className="md:w-[160px] w-[122px] cursor-pointer"
+						alt="get it on google play"
+						onClick={()=> {
+							window.open(APPSTORE_LINK, '_blank')
+						}} />
 				</div>
 			</div>
 		</>
